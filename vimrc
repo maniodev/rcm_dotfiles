@@ -54,6 +54,13 @@ augroup vimrcEx
 augroup END
 
 " ALE linting events
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_fix_on_save = 1
+
+nmap <silent> [c <Plug>(ale_previous_wrap)
+nmap <silent> ]c <Plug>(ale_next_wrap)
+
 augroup ale
   autocmd!
 
@@ -179,3 +186,28 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" Theme settings
+syntax enable
+set background=dark
+colorscheme solarized
+
+let g:xmpfilter_cmd = "seeing_is_believing"
+autocmd FileType ruby nmap <buffer> <C-m> <Plug>(seeing_is_believing-mark)
+autocmd FileType ruby xmap <buffer> <C-m> <Plug>(seeing_is_believing-mark)
+" autocmd FileType ruby imap <buffer> <C-m> <Plug>(seeing_is_believing-mark)
+
+autocmd FileType ruby nmap <buffer> <C-c> <Plug>(seeing_is_believing-clean)
+autocmd FileType ruby xmap <buffer> <C-c> <Plug>(seeing_is_believing-clean)
+" autocmd FileType ruby imap <buffer> <C-c> <Plug>(seeing_is_believing-clean)
+
+" xmpfilter compatible
+autocmd FileType ruby nmap <buffer> <C-r> <Plug>(seeing_is_believing-run_-x)
+autocmd FileType ruby xmap <buffer> <C-r> <Plug>(seeing_is_believing-run_-x)
+" autocmd FileType ruby imap <buffer> <C-r> <Plug>(seeing_is_believing-run_-x)
+
+
+" NERDTree
+let NERDTreeShowHidden=1
+nnoremap <C-\> :NERDTreeFind<CR>
+map <C-n> :NERDTreeToggle<CR>

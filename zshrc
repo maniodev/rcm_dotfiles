@@ -34,8 +34,27 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+# oh-my-zsh configs
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Set Spaceship ZSH as a prompt
+# autoload -U promptinit; promptinit
+# prompt spaceship
+
+SPACESHIP_PROMPT_ORDER=(
+  git
+  char
+)
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+
+export ZSH="/Users/hermannlaghomtalla/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+source $ZSH/oh-my-zsh.sh
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases

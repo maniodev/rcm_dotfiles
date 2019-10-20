@@ -1,0 +1,1 @@
+/Users/hermannlaghomtalla/dotfiles/vim/colors/solarized.vim
