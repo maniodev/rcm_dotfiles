@@ -49,7 +49,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 't9md/vim-ruby-xmpfilter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 if g:has_async
   Plug 'dense-analysis/ale'
