@@ -15,7 +15,7 @@ let g:has_async = v:version >= 800 || has('nvim')
 call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
-Plug 'christoomey/vim-run-interactive'
+" Plug 'christoomey/vim-run-interactive'
 
 " If fzf has already been installed via Homebrew, use the existing fzf
 " Otherwise, install fzf. The `--all` flag makes fzf accessible outside of vim
@@ -50,9 +50,16 @@ Plug 't9md/vim-ruby-xmpfilter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'xolox/vim-session'
+" Plug 'xolox/vim-misc'
+" Plug 'dhruvasagar/vim-zoom'
+
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+Plug 'airblade/vim-gitgutter'
 
 if g:has_async
-  Plug 'dense-analysis/ale'
+  " Plug 'dense-analysis/ale'
 endif
 
 if filereadable(expand("~/.vimrc.bundles.local"))
