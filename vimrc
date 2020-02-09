@@ -342,7 +342,10 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 let g:session_autoload='yes'
 let g:session_autosave='yes'
 
-
+set showtabline=2
+set relativenumber
+set number
+set number relativenumber
 " Snippets
 " let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 " let g:UltiSnipsExpandTrigger="<tab>"

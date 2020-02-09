@@ -52,7 +52,7 @@ SPACESHIP_PROMPT_ORDER=(
 )
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 
-export ZSH="/Users/hermannlaghomtalla/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
@@ -60,3 +60,4 @@ source $ZSH/oh-my-zsh.sh
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export LC_ALL=en_US.UTF-8
