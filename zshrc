@@ -53,6 +53,7 @@ SPACESHIP_PROMPT_ORDER=(
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 
 export ZSH="$HOME/.oh-my-zsh"
+eval "$(rbenv init -)"
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
@@ -61,3 +62,5 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export LC_ALL=en_US.UTF-8
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/Users/hermann.laghom/Downloads/terraform-lsp_0.0.11-beta1_darwin_amd64
