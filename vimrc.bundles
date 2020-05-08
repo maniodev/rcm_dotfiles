@@ -51,7 +51,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-notes'
+" Plug 'xolox/vim-notes'
 " Plug 'xolox/vim-session'
 " Plug 'xolox/vim-misc'
 " Plug 'dhruvasagar/vim-zoom'

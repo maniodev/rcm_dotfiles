@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# From https://github.com/gpakosz/.tmux
+
+git clone https://github.com/gpakosz/.tmux.git $HOME/.tmux
+ln -s -f "$HOME"/.tmux/.tmux.conf $HOME
+cp "$HOME"/dotfiles/tmux/.tmux.conf.local $HOME
