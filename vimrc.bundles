@@ -70,6 +70,7 @@ Plug 'RRethy/vim-illuminate'
 Plug 'wellle/tmux-complete.vim'
 " Plug 'tacahiroy/ctrlp-funky'
 " Plug 'mhinz/vim-startify'
+Plug 'ngmy/vim-rubocop'
 
 if g:has_async
   " Plug 'dense-analysis/ale'

@@ -66,3 +66,10 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export LC_ALL=en_US.UTF-8
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/Applications/
+
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

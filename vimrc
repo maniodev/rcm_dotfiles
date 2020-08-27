@@ -136,6 +136,14 @@ nnoremap <silent> <Leader>s :TestNearest<CR>
 nnoremap <silent> <Leader>l :TestLast<CR>
 nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <Leader>gt :TestVisit<CR>
+if has('nvim')
+  tmap <C-o> <C-\><C-n>
+endif
+let test#ruby#use_binstubs = 1
+
+" rubocop
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 
 " Run commands that require an interactive shell
 " nnoremap <Leader>r :RunInInteractiveShell<Space>
@@ -215,8 +223,7 @@ let g:coc_global_extensions = ["coc-css",
             \ "coc-tslint",
             \ "coc-tsserver",
             \ "coc-ultisnips",
-            \ "coc-tailwindcss",
-            \ "coc-vetur"]
+            \ "coc-solargraph"]
 " from readme
 " if hidden is not set, TextEdit might fail.
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
@@ -393,3 +400,10 @@ autocmd VimResized * wincmd =
 
 " Allow to paste the last yanked selection multiple time
 xnoremap p pgvy
+
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+
+
+" GItgutter
+hi! link SignColumn LineNr

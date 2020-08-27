@@ -5,9 +5,10 @@ alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
-
+alias vim=nvim
 # Bundler
 alias b="bundle"
+alias brspec="bundle exec rspec"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
