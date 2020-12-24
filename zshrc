@@ -36,6 +36,8 @@ _load_settings "$HOME/.zsh/configs"
 
 # oh-my-zsh configs
 
+plugins=(zsh-autosuggestions)
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
@@ -54,6 +56,7 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 
 ZSH_DISABLE_COMPFIX=true
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 ZSH_THEME="robbyrussell"
@@ -72,4 +75,5 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+export TF_LOG=INFO
+# source /Users/h.talla/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

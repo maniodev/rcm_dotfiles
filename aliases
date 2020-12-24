@@ -5,7 +5,8 @@ alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
-alias vim=nvim
+alias vim=vim
+alias cat=bat
 # Bundler
 alias b="bundle"
 alias brspec="bundle exec rspec"
@@ -13,6 +14,10 @@ alias brspec="bundle exec rspec"
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
+alias rubo="bundle exec rubocop"
+
+# git
+alias master="git co master"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'

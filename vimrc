@@ -7,10 +7,15 @@ set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
 set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
-set history=50
+set history=1000
 set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
+
+" Seach
 set incsearch     " do incremental searching
+set ignorecase
+set smartcase
+
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set modelines=0   " Disable modelines as a security precaution
@@ -189,7 +194,12 @@ endif
 " Theme settings
 syntax enable
 set background=dark
+" let g:solarized_contrast="normal"
+" let g:solarized_termcolors=256
 colorscheme solarized
+" colorscheme vim-monokai-tasty
+" colorscheme molokai
+" colorscheme monokai_extended
 
 let g:xmpfilter_cmd = "seeing_is_believing"
 autocmd FileType ruby nmap <buffer> <C-m> <Plug>(seeing_is_believing-mark)
@@ -407,3 +417,10 @@ imap <C-l> <Plug>(coc-snippets-expand)
 
 " GItgutter
 hi! link SignColumn LineNr
+" hi Search guifg=#bada55 guibg=#000000 gui=bold ctermfg=green ctermbg=black cterm=bold
+
+au FocusGained,BufEnter * :checktime
+
+
+nmap <up> gk
+nmap <down> gj
