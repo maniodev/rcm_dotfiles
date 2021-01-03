@@ -1,0 +1,4 @@
+keybinding:
+  universal:
+    prevBlock-alt: '<c-k>' # goto the previous block / panel
+    nextBlock-alt: '<c-j>' # goto the next block / panel

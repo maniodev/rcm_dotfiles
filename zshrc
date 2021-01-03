@@ -76,4 +76,6 @@ fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 export TF_LOG=INFO
-# source /Users/h.talla/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH=$PATH:/Applications/flutter/bin
+
+export CONFIG_DIR="${HOME}/.config/lazygit/"
