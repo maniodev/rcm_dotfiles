@@ -74,10 +74,9 @@ Plug 'wellle/tmux-complete.vim'
 Plug 'ngmy/vim-rubocop'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'https://github.com/tpope/vim-obsession'
-
+Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3' }
 Plug 'csexton/trailertrash.vim'
 Plug 'wsdjeg/vim-fetch'
-
 Plug 'neomake/neomake'
 
 
